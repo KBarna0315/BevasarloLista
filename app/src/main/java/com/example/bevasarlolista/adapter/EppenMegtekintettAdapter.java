@@ -1,6 +1,7 @@
 package com.example.bevasarlolista.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.constraintlayout.widget.Constraints;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bevasarlolista.R;
+import com.example.bevasarlolista.TermekInformaciok;
 import com.example.bevasarlolista.model.EppenMegtekintett;
 
 import java.util.List;
@@ -43,6 +45,23 @@ public class EppenMegtekintettAdapter extends RecyclerView.Adapter<EppenMegtekin
         holder.mennyiseg.setText(eppenMegtekintettList.get(position).getMennyiseg());
         holder.egysegar.setText(eppenMegtekintettList.get(position).getEgysegar());
         holder.bg.setBackgroundResource(eppenMegtekintettList.get(position).getImageURL());
+
+
+        //Átíriányítás a termékinformációk activityre
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i=new Intent(context, TermekInformaciok.class);
+                i.putExtra("nev",eppenMegtekintettList.get(position).getNev());
+                i.putExtra("kep",eppenMegtekintettList.get(position).getBgimageurl());
+                i.putExtra("ar",eppenMegtekintettList.get(position).getAr());
+                i.putExtra("leiras",eppenMegtekintettList.get(position).getLeiras());
+
+                context.startActivity(i);
+
+            }
+        });
 
     }
 

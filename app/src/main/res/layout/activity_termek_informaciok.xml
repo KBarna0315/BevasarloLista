@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermekInformaciok">
+
+    <ImageView
+        android:id="@+id/kosar"
+        android:layout_width="101dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cartbutton" />
+
+    <ImageView
+        android:id="@+id/vissza2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Termék Információk!"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/vissza2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vissza2" />
+
+    <ImageView
+        android:id="@+id/nagy_kep"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vissza2"
+        app:srcCompat="@drawable/b1" />
+
+    <TextView
+        android:id="@+id/termek_neve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nagy_kep" />
+
+    <TextView
+        android:id="@+id/termek_leiras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="272dp"
+        android:text="termek leiras"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/termek_neve"
+        app:layout_constraintTop_toBottomOf="@+id/termek_neve" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/buy_now_bg"
+        android:text="Buy Now"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termek_ara"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cartbutton" />
+
+    <TextView
+        android:id="@+id/termek_ara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/termek_leiras"
+        app:layout_constraintTop_toBottomOf="@+id/termek_leiras" />
+
+    <TextView
+        android:id="@+id/termek_mennyiseg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/termek_ara"
+        app:layout_constraintTop_toBottomOf="@+id/termek_ara" />
+
+    <TextView
+        android:id="@+id/termek_egyseg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/termek_mennyiseg"
+        app:layout_constraintStart_toEndOf="@+id/termek_mennyiseg"
+        app:layout_constraintTop_toTopOf="@+id/termek_mennyiseg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity {
                 "150 FT",
                 "3",
                 "KG",
-                R.drawable.card4)
+                R.drawable.card4,
+                        R.drawable.b4)
                 );
         eppenMegtekintettList.add(new EppenMegtekintett(
                 "Kiwi",
@@ -88,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
                 "300 FT",
                 "1",
                 "db",
-                R.drawable.card1)
+                R.drawable.card1,
+                R.drawable.b1)
                  );
         eppenMegtekintettList.add(new EppenMegtekintett(
                 "Eper",
@@ -96,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
                 "1000 FT",
                 "1",
                 "KG",
-                R.drawable.card2)
+                R.drawable.card2,
+                R.drawable.b2)
                 );
         eppenMegtekintettList.add(new EppenMegtekintett(
                 "Papaya",
@@ -104,7 +107,8 @@ public class MainActivity extends AppCompatActivity {
                 "600 FT",
                 "1",
                 "DB",
-                R.drawable.card3)
+                R.drawable.card3,
+                R.drawable.b3)
                 );
 
 

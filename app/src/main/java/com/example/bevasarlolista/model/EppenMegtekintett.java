@@ -10,16 +10,17 @@ public class EppenMegtekintett {
     String egysegar;
     Integer imageURL;
 
+    Integer bgimageurl; //Új attributum
+
     //Kedvencem a Generate Constructor
-
-
-    public EppenMegtekintett(String nev, String leiras, String ar, String mennyiseg, String egysegar, Integer imageURL) {
+    public EppenMegtekintett(String nev, String leiras, String ar, String mennyiseg, String egysegar, Integer imageURL,Integer bgimageurl) {
         this.nev = nev;
         this.leiras = leiras;
         this.ar = ar;
         this.mennyiseg = mennyiseg;
         this.egysegar = egysegar;
         this.imageURL = imageURL;
+        this.bgimageurl=bgimageurl; //Új attributum
     }
 
     //Kellene Getter-Setter
@@ -71,4 +72,13 @@ public class EppenMegtekintett {
     public void setImageURL(Integer imageURL) {
         this.imageURL = imageURL;
     }
+
+    public Integer getBgimageurl() {
+        return bgimageurl;
+    } //Új getter
+
+    public void setBgimageurl(Integer imageURL) {
+        this.bgimageurl = bgimageurl;
+    } //Uj setter
+
 }
