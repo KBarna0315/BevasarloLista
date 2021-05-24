@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        //Kéne még hogy műdködjön a keresés funkció meg a cartos iconok on clickje
 
         //Termékek hozzáadása a modellhez
         //A képeket az internetről szedtem átméreteztem és felhasználtam őket
